@@ -1,0 +1,53 @@
+BasedOnStyle: WebKit
+IndentWidth: 4
+UseTab: Never
+#ColumnLimit: 150
+# Set EOL to LF unconditionally
+#DeriveLineEnding: false
+UseCRLF: false
+
+Language: Cpp
+DisableFormat:   false
+Standard: Cpp11
+
+AlwaysBreakTemplateDeclarations: true
+AlignEscapedNewlinesLeft: false
+AlignOperands:   true
+AlignAfterOpenBracket: true
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
+
+# Configure each individual brace in BraceWrapping
+BreakBeforeBraces: Custom
+# Control of individual brace wrapping cases
+BraceWrapping: {
+        AfterClass: 'false'
+        AfterControlStatement: 'false'
+        AfterEnum : 'false'
+        AfterFunction : 'false'
+        AfterNamespace : 'false'
+        AfterStruct : 'false'
+        AfterUnion : 'false'
+        BeforeCatch : 'false'
+        BeforeElse : 'false'
+        IndentBraces : 'false'
+        AfterExternBlock : 'false'
+        SplitEmptyFunction : 'false'
+        SplitEmptyRecord : 'false'
+        SplitEmptyNamespace : 'false'
+}
+
+ConstructorInitializerAllOnOneLineOrOnePerLine: false
+ConstructorInitializerIndentWidth: 4
+PointerAlignment: Left
+SpaceAfterCStyleCast: false
+SpacesBeforeTrailingComments: 1
+SpacesInAngles:  false
+SpacesInContainerLiterals: true
+SpacesInCStyleCastParentheses: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+SpaceAfterTemplateKeyword: true
+
+SortUsingDeclarations: true
+SortIncludes: true
