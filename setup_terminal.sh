@@ -1,4 +1,5 @@
-cp tmux.conf ~/.tmux.conf
+cp tmux/tmux.conf ~/.tmux.conf
+cp tmux/tmux.conf.local ~/.tmux.conf.local
 cp -r config/nvim ~/.config/nvim
 cp clang-format ~ 
 sudo apt-get update
