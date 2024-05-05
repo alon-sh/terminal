@@ -18,6 +18,6 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 
 # go to packer.lua do :so and :PackerSync
 #
-echo 'export PATH=~/.local/bin:$PATH` >> ~/.bashrc
+echo 'export PATH=~/.local/bin:$PATH' >> ~/.bashrc
 echo 'alias vi=nvim' >> ~/.bashrc
 echo 'alias vim=nvim' >> ~/.bashrc
