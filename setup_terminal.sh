@@ -2,8 +2,8 @@ cp .tmux.conf ..
 cp -r .config/nvim ../.config/nvim
 cp clang-format ..
 sudo apt-get update
-sudo apt-get install ripgrep tmux clang-format
-sudo dnf install ripgrep tmux clang
+sudo apt-get install ripgrep tmux clang-format gcc g++ cmake git build-dep build-essential linux-headers-generic
+#sudo dnf install ripgrep tmux clang
 
 git clone https://github.com/neovim/neovim.git
 cd neovim
