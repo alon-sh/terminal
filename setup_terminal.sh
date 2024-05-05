@@ -1,6 +1,6 @@
-cp .tmux.conf ..
-cp -r .config/nvim ../.config/nvim
-cp clang-format ..
+cp tmux.conf ~/.tmux.conf
+cp -r config/nvim ~/.config/nvim
+cp clang-format ~ 
 sudo apt-get update
 sudo apt-get install gettext -y ripgrep tmux clang-format gcc g++ cmake git \
     build-essential linux-headers-generic
