@@ -21,7 +21,7 @@ elif [ -f /etc/lsb-release ] && grep -q "Ubuntu" /etc/lsb-release; then
          build-essential linux-headers-generic
     sudo apt-get install -y git build-essential gdb-multiarch qemu-system-misc gcc-riscv64-linux-gnu binutils-riscv64-linux-gnu
     sudo apt-get install -y build-essential bison flex gawk libncurses5-dev texinfo unzip libtool-bin gperf help2man g++ libtool automake git cvs subversion libexpat-dev libssl-dev patch curl
-    sudo apt-get install -y python3
+    sudo apt-get install -y python3 fontforge python3-fontforge
     sudo apt-get install -y bison clang flex git llvm make maven swig cmake \
         curl g++ libx11-dev libxml2-dev libxt-dev libmotif-common libmotif-dev \
         python3-dev zlib1g-dev llvm-dev libclang-dev libudunits2-dev \
@@ -61,3 +61,13 @@ wget https://raw.githubusercontent.com/r3tex/one-dark/master/bashrc -O\
     - >> ~/.bashrc
 
 . ~/.bashrc
+
+# need to install decent UTF-8 fonts, https://github.com/r3tex/one-dark recommends 
+#  Julia Mono with NerdFont
+https://github.com/ryanoasis/nerd-fonts/archive/refs/tags/v3.2.1.tar.gz
+tar zxvf v3.2.1.tar.gz
+cd nerd-fonts-3.2.1
+# ? do i need to install nerd-fonts ? if yes use ./install.sh
+wget https://github.com/cormullion/juliamono/releases/download/v0.057/JuliaMono-ttf.tar.gz
+tar zxvf JuliaMono-ttf.tar.gz
+python3 ./font-patcher --mono --complete --careful JuliaMono-Regular.ttf
