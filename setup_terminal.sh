@@ -31,7 +31,7 @@ else
     exit 0
 fi
 
-git clone --branch release-0.9 --depth 1 https://github.com/neovim/neovim.git
+git clone --branch release-0.11 --depth 1 https://github.com/neovim/neovim.git
 cd neovim
 #
 make CMAKE_BUILD_TYPE=Release \
