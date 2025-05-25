@@ -4,7 +4,6 @@ mkdir -p ~/.config/nvim
 cp -r config/nvim ~/.config
 cp clang-format ~ 
 
-
 if [ -f /etc/arch-release ]; then
     echo "Installing on Arch Linux ... "
     sudo pacman -Syu
@@ -33,15 +32,15 @@ fi
 
 git clone --branch release-0.11 --depth 1 https://github.com/neovim/neovim.git
 cd neovim
-#
+
 make CMAKE_BUILD_TYPE=Release \
      CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/.local"
 make install
 
-
 git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
 echo 'export PATH=~/.local/bin:$PATH' >> ~/.bashrc
+echo 'export LD_LIBRARY_PATH=~/.local/lib:$LD_LIBRARY_PATH' >> ~/.bashrc
 echo 'alias vi=nvim' >> ~/.bashrc
 echo 'alias vim=nvim' >> ~/.bashrc
 source ~/.bashrc
