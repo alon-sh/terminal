@@ -17,7 +17,7 @@ elif [ -f /etc/lsb-release ] && grep -q "Ubuntu" /etc/lsb-release; then
     echo "Ubuntu"
     sudo apt-get update
     sudo apt-get install -y gettext luarocks ripgrep tmux clang-format gcc g++ cmake git \
-         build-essential linux-headers-generic
+         build-essential linux-headers-generic libevent libevent-dev
     sudo apt-get install -y git build-essential gdb-multiarch qemu-system-misc gcc-riscv64-linux-gnu binutils-riscv64-linux-gnu
     sudo apt-get install -y build-essential bison flex gawk libncurses5-dev texinfo unzip libtool-bin gperf help2man g++ libtool automake git cvs subversion libexpat-dev libssl-dev patch curl
     sudo apt-get install -y python3 fontforge python3-fontforge
